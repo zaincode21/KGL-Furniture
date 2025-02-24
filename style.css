@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    font-family: sans-serif;
+}
+
+.card-img-top { /* Style for product images */
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Prevents image distortion */
+}
+
+
+.card-img-top { /* Style for product images */
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Prevents image distortion */
+}
+
+.hero-banner { /* Style the hero banner */
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 100px 0;
+}
+
+.card { /* Style the product cards */
+    border: 1px solid #ddd;
+    transition: transform 0.2s; /* Add a hover effect */
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.card-img-top { /* Style the product images within the cards */
+    max-height: 200px;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+/* ... add more styles as needed ... */
+
+/* styles.css */
+/* ... other styles ... */
+
+.carousel-item img {
+    height: 500px; /* Adjust this value to your desired height */
+    object-fit: cover; /* or contain, depending on your preference */
+    width: 100%; /* Ensure images fill the carousel container */
+}
+
+/* Optional: Media queries for different screen sizes */
+@media (max-width: 768px) { /* Example breakpoint for tablets */
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) { /* Example breakpoint for mobile */
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    position: absolute; /* Needed for positioning */
+    left: 0;
+    right: 0;
+    bottom: 0; /* Position at the bottom */
+}
+
+
+.carousel-caption h5 {
+    font-size: 1.5rem; /* Adjust heading size */
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Adjust paragraph size */
+}
+/* styles.css */
+.carousel-item img {
+    object-fit: cover; /* Or contain, depending on your preference */
+    height: 500px; /* Adjust this value to control the carousel height */
+    width: 100%; /* Ensure the image takes full width */
+}
+
+.carousel-caption {
+    /* Style the caption text to be readable against the image */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    bottom: 20px; /* Position the caption at the bottom */
+}
+
+/* Adjust height for smaller screens if necessary */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px; /* Adjust height as needed */
+    }
+}
+
+/* Optional: If you want to constrain the carousel width */
+.carousel {
+    max-width: 900px; /* Adjust this value to control the carousel width */
+    margin: 0 auto; /* Center the carousel */
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Furniture Store</title>
+    <link href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* styles.css */
+.carousel-item img {
+    object-fit:cover; /* Or contain, depending on your preference */
+    height: 350px; /* Adjust this value to control the carousel height */
+    width: 100%; /* Ensure the image takes full width */
+}
+
+.carousel-caption {
+    
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    padding: 20px;
+    bottom: 20px; /* Position the caption at the bottom */
+}
+
+/* Adjust height for smaller screens if necessary */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px; /* Adjust height as needed */
+    }
+}
+
+/* Optional: If you want to constrain the carousel width */
+.carousel {
+    max-width: 900px; /* Adjust this value to control the carousel width */
+    margin: 0 auto; /* Center the carousel */
+}
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Furniture Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner py-5">
+        <div class="container">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/2.jpg" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption">
+                            <h5>Premium Furniture</h5>
+                            <p>Quality and style for your home.</p>
+                            <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/1.jpeg" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption">
+                            <h5>Modern Designs</h5>
+                            <p>Contemporary furniture to elevate your space.</p>
+                            <a href="products.html" class="btn btn-primary">Explore Collection</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/5.jpg" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption">
+                            <h5>Comfort and Style</h5>
+                            <p>Find the perfect pieces for your comfort.</p>
+                            <a href="products.html" class="btn btn-primary">View Products</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <h2>Featured Categories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/1.jpeg" alt="Sofas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sofas</h5>
+                        <a href="products.html?category=sofas" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/2.jpg" alt="Chairs" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Chairs</h5>
+                        <a href="products.html?category=chairs" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/3.jpg" alt="Tables" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tables</h5>
+                        <a href="products.html?category=tables" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+.
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/4.png" alt="Tables" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tables</h5>
+                        <a href="products.html?category=tables" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/5.jpg" alt="Tables" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tables</h5>
+                        <a href="products.html?category=tables" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/7.jpg" alt="Tables" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tables</h5>
+                        <a href="products.html?category=tables" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Furniture Store. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
